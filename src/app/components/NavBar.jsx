@@ -25,7 +25,7 @@ export default function NavBar() {
           <Link href="services">Services</Link>
         </li>
         <li>
-          <Link href="#">Dashboard</Link>
+          <Link href="/dashboard">Dashboard</Link>
         </li>
         {session?.user && (
           <li>
