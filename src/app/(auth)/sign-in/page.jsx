@@ -12,6 +12,7 @@ import {
   TextField,
 } from "@heroui/react";
 import { email } from "better-auth";
+import Link from "next/link";
 import { useState } from "react";
 
 const SignInPage = () => {
@@ -111,6 +112,14 @@ const SignInPage = () => {
           </Button>
         </div>
       </Form>
+      <p className="mt-5">
+        <small className="text-2xl">
+          Forgot Password?{" "}
+          <Link href="/forgot-password" className="btn btn-accent">
+            Reset Password
+          </Link>
+        </small>
+      </p>
     </div>
   );
 };
